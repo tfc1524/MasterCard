@@ -23,372 +23,6 @@
     </_.fcp.AnimationOnByDefault.false..._.fcp.MarkAnimation.true...style-rule>
   </_.fcp.AnimationOnByDefault.false...style>
   <datasources>
-    <datasource caption='Sheet1 (百貨公司所在區)' inline='true' name='federated.05en3l20aktxlv1gmauy01hsbzdv' version='18.1'>
-      <connection class='federated'>
-        <named-connections>
-          <named-connection caption='百貨公司所在區' name='excel-direct.0gp56zz05d9o9316h2hf81xn0c50'>
-            <connection class='excel-direct' cleaning='no' compat='no' dataRefreshTime='' filename='D:/課程資料/Github/MasterCard/百貨公司所在區.xlsx' interpretationMode='0' password='' server='' validate='no' />
-          </named-connection>
-        </named-connections>
-        <_.fcp.ObjectModelEncapsulateLegacy.false...relation connection='excel-direct.0gp56zz05d9o9316h2hf81xn0c50' name='Sheet1' table='[Sheet1$]' type='table'>
-          <columns gridOrigin='A1:O5224:no:A1:O5224:0' header='yes' outcome='6'>
-            <column datatype='date' name='發票年月' ordinal='0' />
-            <column datatype='string' name='縣市代碼' ordinal='1' />
-            <column datatype='string' name='縣市名稱' ordinal='2' />
-            <column datatype='integer' name='鄉鎮市區代碼' ordinal='3' />
-            <column datatype='string' name='鄉鎮市區名稱' ordinal='4' />
-            <column datatype='string' name='行業名稱' ordinal='5' />
-            <column datatype='integer' name='平均開立張數' ordinal='6' />
-            <column datatype='integer' name='平均開立金額' ordinal='7' />
-            <column datatype='integer' name='平均客單價' ordinal='8' />
-            <column datatype='integer' name='COVID' ordinal='9' />
-            <column datatype='integer' name='Year' ordinal='10' />
-            <column datatype='integer' name='Month' ordinal='11' />
-            <column datatype='integer' name='Day' ordinal='12' />
-            <column datatype='integer' name='Anniversary' ordinal='13' />
-            <column datatype='integer' name='週年慶前後' ordinal='14' />
-          </columns>
-        </_.fcp.ObjectModelEncapsulateLegacy.false...relation>
-        <_.fcp.ObjectModelEncapsulateLegacy.true...relation connection='excel-direct.0gp56zz05d9o9316h2hf81xn0c50' name='Sheet1' table='[Sheet1$]' type='table'>
-          <columns gridOrigin='A1:O5224:no:A1:O5224:0' header='yes' outcome='6'>
-            <column datatype='date' name='發票年月' ordinal='0' />
-            <column datatype='string' name='縣市代碼' ordinal='1' />
-            <column datatype='string' name='縣市名稱' ordinal='2' />
-            <column datatype='integer' name='鄉鎮市區代碼' ordinal='3' />
-            <column datatype='string' name='鄉鎮市區名稱' ordinal='4' />
-            <column datatype='string' name='行業名稱' ordinal='5' />
-            <column datatype='integer' name='平均開立張數' ordinal='6' />
-            <column datatype='integer' name='平均開立金額' ordinal='7' />
-            <column datatype='integer' name='平均客單價' ordinal='8' />
-            <column datatype='integer' name='COVID' ordinal='9' />
-            <column datatype='integer' name='Year' ordinal='10' />
-            <column datatype='integer' name='Month' ordinal='11' />
-            <column datatype='integer' name='Day' ordinal='12' />
-            <column datatype='integer' name='Anniversary' ordinal='13' />
-            <column datatype='integer' name='週年慶前後' ordinal='14' />
-          </columns>
-        </_.fcp.ObjectModelEncapsulateLegacy.true...relation>
-        <metadata-records>
-          <metadata-record class='capability'>
-            <remote-name />
-            <remote-type>0</remote-type>
-            <parent-name>[Sheet1]</parent-name>
-            <remote-alias />
-            <aggregation>Count</aggregation>
-            <contains-null>true</contains-null>
-            <attributes>
-              <attribute datatype='integer' name='context'>0</attribute>
-              <attribute datatype='string' name='gridOrigin'>&quot;A1:O5224:no:A1:O5224:0&quot;</attribute>
-              <attribute datatype='boolean' name='header'>true</attribute>
-              <attribute datatype='integer' name='outcome'>6</attribute>
-            </attributes>
-          </metadata-record>
-          <metadata-record class='column'>
-            <remote-name>發票年月</remote-name>
-            <remote-type>7</remote-type>
-            <local-name>[發票年月]</local-name>
-            <parent-name>[Sheet1]</parent-name>
-            <remote-alias>發票年月</remote-alias>
-            <ordinal>0</ordinal>
-            <local-type>date</local-type>
-            <aggregation>Year</aggregation>
-            <contains-null>true</contains-null>
-            <attributes>
-              <attribute datatype='string' name='DebugRemoteType'>&quot;DATE&quot;</attribute>
-            </attributes>
-            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Sheet1_E5396CE0205F45DBB27A548597281174]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
-          </metadata-record>
-          <metadata-record class='column'>
-            <remote-name>縣市代碼</remote-name>
-            <remote-type>130</remote-type>
-            <local-name>[縣市代碼]</local-name>
-            <parent-name>[Sheet1]</parent-name>
-            <remote-alias>縣市代碼</remote-alias>
-            <ordinal>1</ordinal>
-            <local-type>string</local-type>
-            <aggregation>Count</aggregation>
-            <contains-null>true</contains-null>
-            <collation flag='1' name='LZH_RTW_S2' />
-            <attributes>
-              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
-            </attributes>
-            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Sheet1_E5396CE0205F45DBB27A548597281174]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
-          </metadata-record>
-          <metadata-record class='column'>
-            <remote-name>縣市名稱</remote-name>
-            <remote-type>130</remote-type>
-            <local-name>[縣市名稱]</local-name>
-            <parent-name>[Sheet1]</parent-name>
-            <remote-alias>縣市名稱</remote-alias>
-            <ordinal>2</ordinal>
-            <local-type>string</local-type>
-            <aggregation>Count</aggregation>
-            <contains-null>true</contains-null>
-            <collation flag='1' name='LZH_RTW_S2' />
-            <attributes>
-              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
-            </attributes>
-            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Sheet1_E5396CE0205F45DBB27A548597281174]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
-          </metadata-record>
-          <metadata-record class='column'>
-            <remote-name>鄉鎮市區代碼</remote-name>
-            <remote-type>20</remote-type>
-            <local-name>[鄉鎮市區代碼]</local-name>
-            <parent-name>[Sheet1]</parent-name>
-            <remote-alias>鄉鎮市區代碼</remote-alias>
-            <ordinal>3</ordinal>
-            <local-type>integer</local-type>
-            <aggregation>Sum</aggregation>
-            <contains-null>true</contains-null>
-            <attributes>
-              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
-            </attributes>
-            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Sheet1_E5396CE0205F45DBB27A548597281174]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
-          </metadata-record>
-          <metadata-record class='column'>
-            <remote-name>鄉鎮市區名稱</remote-name>
-            <remote-type>130</remote-type>
-            <local-name>[鄉鎮市區名稱]</local-name>
-            <parent-name>[Sheet1]</parent-name>
-            <remote-alias>鄉鎮市區名稱</remote-alias>
-            <ordinal>4</ordinal>
-            <local-type>string</local-type>
-            <aggregation>Count</aggregation>
-            <contains-null>true</contains-null>
-            <collation flag='1' name='LZH_RTW_S2' />
-            <attributes>
-              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
-            </attributes>
-            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Sheet1_E5396CE0205F45DBB27A548597281174]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
-          </metadata-record>
-          <metadata-record class='column'>
-            <remote-name>行業名稱</remote-name>
-            <remote-type>130</remote-type>
-            <local-name>[行業名稱]</local-name>
-            <parent-name>[Sheet1]</parent-name>
-            <remote-alias>行業名稱</remote-alias>
-            <ordinal>5</ordinal>
-            <local-type>string</local-type>
-            <aggregation>Count</aggregation>
-            <contains-null>true</contains-null>
-            <collation flag='1' name='LZH_RTW_S2' />
-            <attributes>
-              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
-            </attributes>
-            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Sheet1_E5396CE0205F45DBB27A548597281174]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
-          </metadata-record>
-          <metadata-record class='column'>
-            <remote-name>平均開立張數</remote-name>
-            <remote-type>20</remote-type>
-            <local-name>[平均開立張數]</local-name>
-            <parent-name>[Sheet1]</parent-name>
-            <remote-alias>平均開立張數</remote-alias>
-            <ordinal>6</ordinal>
-            <local-type>integer</local-type>
-            <aggregation>Sum</aggregation>
-            <contains-null>true</contains-null>
-            <attributes>
-              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
-            </attributes>
-            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Sheet1_E5396CE0205F45DBB27A548597281174]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
-          </metadata-record>
-          <metadata-record class='column'>
-            <remote-name>平均開立金額</remote-name>
-            <remote-type>20</remote-type>
-            <local-name>[平均開立金額]</local-name>
-            <parent-name>[Sheet1]</parent-name>
-            <remote-alias>平均開立金額</remote-alias>
-            <ordinal>7</ordinal>
-            <local-type>integer</local-type>
-            <aggregation>Sum</aggregation>
-            <contains-null>true</contains-null>
-            <attributes>
-              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
-            </attributes>
-            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Sheet1_E5396CE0205F45DBB27A548597281174]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
-          </metadata-record>
-          <metadata-record class='column'>
-            <remote-name>平均客單價</remote-name>
-            <remote-type>20</remote-type>
-            <local-name>[平均客單價]</local-name>
-            <parent-name>[Sheet1]</parent-name>
-            <remote-alias>平均客單價</remote-alias>
-            <ordinal>8</ordinal>
-            <local-type>integer</local-type>
-            <aggregation>Sum</aggregation>
-            <contains-null>true</contains-null>
-            <attributes>
-              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
-            </attributes>
-            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Sheet1_E5396CE0205F45DBB27A548597281174]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
-          </metadata-record>
-          <metadata-record class='column'>
-            <remote-name>COVID</remote-name>
-            <remote-type>20</remote-type>
-            <local-name>[COVID]</local-name>
-            <parent-name>[Sheet1]</parent-name>
-            <remote-alias>COVID</remote-alias>
-            <ordinal>9</ordinal>
-            <local-type>integer</local-type>
-            <aggregation>Sum</aggregation>
-            <contains-null>true</contains-null>
-            <attributes>
-              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
-            </attributes>
-            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Sheet1_E5396CE0205F45DBB27A548597281174]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
-          </metadata-record>
-          <metadata-record class='column'>
-            <remote-name>Year</remote-name>
-            <remote-type>20</remote-type>
-            <local-name>[Year]</local-name>
-            <parent-name>[Sheet1]</parent-name>
-            <remote-alias>Year</remote-alias>
-            <ordinal>10</ordinal>
-            <local-type>integer</local-type>
-            <aggregation>Sum</aggregation>
-            <contains-null>true</contains-null>
-            <attributes>
-              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
-            </attributes>
-            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Sheet1_E5396CE0205F45DBB27A548597281174]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
-          </metadata-record>
-          <metadata-record class='column'>
-            <remote-name>Month</remote-name>
-            <remote-type>20</remote-type>
-            <local-name>[Month]</local-name>
-            <parent-name>[Sheet1]</parent-name>
-            <remote-alias>Month</remote-alias>
-            <ordinal>11</ordinal>
-            <local-type>integer</local-type>
-            <aggregation>Sum</aggregation>
-            <contains-null>true</contains-null>
-            <attributes>
-              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
-            </attributes>
-            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Sheet1_E5396CE0205F45DBB27A548597281174]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
-          </metadata-record>
-          <metadata-record class='column'>
-            <remote-name>Day</remote-name>
-            <remote-type>20</remote-type>
-            <local-name>[Day]</local-name>
-            <parent-name>[Sheet1]</parent-name>
-            <remote-alias>Day</remote-alias>
-            <ordinal>12</ordinal>
-            <local-type>integer</local-type>
-            <aggregation>Sum</aggregation>
-            <contains-null>true</contains-null>
-            <attributes>
-              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
-            </attributes>
-            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Sheet1_E5396CE0205F45DBB27A548597281174]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
-          </metadata-record>
-          <metadata-record class='column'>
-            <remote-name>Anniversary</remote-name>
-            <remote-type>20</remote-type>
-            <local-name>[Anniversary]</local-name>
-            <parent-name>[Sheet1]</parent-name>
-            <remote-alias>Anniversary</remote-alias>
-            <ordinal>13</ordinal>
-            <local-type>integer</local-type>
-            <aggregation>Sum</aggregation>
-            <contains-null>true</contains-null>
-            <attributes>
-              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
-            </attributes>
-            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Sheet1_E5396CE0205F45DBB27A548597281174]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
-          </metadata-record>
-          <metadata-record class='column'>
-            <remote-name>週年慶前後</remote-name>
-            <remote-type>20</remote-type>
-            <local-name>[週年慶前後]</local-name>
-            <parent-name>[Sheet1]</parent-name>
-            <remote-alias>週年慶前後</remote-alias>
-            <ordinal>14</ordinal>
-            <local-type>integer</local-type>
-            <aggregation>Sum</aggregation>
-            <contains-null>true</contains-null>
-            <attributes>
-              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
-            </attributes>
-            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Sheet1_E5396CE0205F45DBB27A548597281174]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
-          </metadata-record>
-        </metadata-records>
-      </connection>
-      <aliases enabled='yes' />
-      <column aggregation='Sum' datatype='integer' name='[Anniversary]' role='dimension' type='ordinal' />
-      <column caption='Covid' datatype='integer' name='[COVID]' role='dimension' type='ordinal' />
-      <column datatype='integer' name='[Day]' role='dimension' type='quantitative' />
-      <column datatype='integer' name='[Month]' role='dimension' type='quantitative' />
-      <column datatype='integer' name='[Year]' role='dimension' type='quantitative' />
-      <_.fcp.ObjectModelTableType.true...column caption='Sheet1' datatype='table' name='[__tableau_internal_object_id__].[Sheet1_E5396CE0205F45DBB27A548597281174]' role='measure' type='quantitative' />
-      <column datatype='string' name='[行業名稱]' role='dimension' type='nominal'>
-        <aliases>
-          <alias key='&quot;食品、飲料及菸草製品零售業&quot;' value='食品、飲料及菸草零售' />
-        </aliases>
-      </column>
-      <column-instance column='[行業名稱]' derivation='None' name='[none:行業名稱:nk]' pivot='key' type='nominal' />
-      <layout _.fcp.SchemaViewerObjectModel.false...dim-percentage='0.5' _.fcp.SchemaViewerObjectModel.false...measure-percentage='0.4' dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
-      <style>
-        <style-rule element='mark'>
-          <encoding attr='color' field='[none:行業名稱:nk]' type='palette'>
-            <map to='#4e79a7'>
-              <bucket>&quot;百貨公司&quot;</bucket>
-            </map>
-            <map to='#59a14f'>
-              <bucket>&quot;超級市場&quot;</bucket>
-            </map>
-            <map to='#e15759'>
-              <bucket>&quot;便利商店&quot;</bucket>
-            </map>
-            <map to='#e15759'>
-              <bucket>&quot;綜合商品零售業&quot;</bucket>
-            </map>
-            <map to='#e15759'>
-              <bucket>&quot;餐飲業&quot;</bucket>
-            </map>
-            <map to='#edc948'>
-              <bucket>&quot;零售式量販店&quot;</bucket>
-            </map>
-            <map to='#f28e2b'>
-              <bucket>&quot;住宿服務業&quot;</bucket>
-            </map>
-            <map to='#f28e2b'>
-              <bucket>&quot;食品、飲料及菸草製品零售業&quot;</bucket>
-            </map>
-          </encoding>
-        </style-rule>
-      </style>
-      <semantic-values>
-        <semantic-value key='[Country].[Name]' value='&quot;Taiwan&quot;' />
-      </semantic-values>
-      <_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
-        <objects>
-          <object caption='Sheet1' id='Sheet1_E5396CE0205F45DBB27A548597281174'>
-            <properties context=''>
-              <relation connection='excel-direct.0gp56zz05d9o9316h2hf81xn0c50' name='Sheet1' table='[Sheet1$]' type='table'>
-                <columns gridOrigin='A1:O5224:no:A1:O5224:0' header='yes' outcome='6'>
-                  <column datatype='date' name='發票年月' ordinal='0' />
-                  <column datatype='string' name='縣市代碼' ordinal='1' />
-                  <column datatype='string' name='縣市名稱' ordinal='2' />
-                  <column datatype='integer' name='鄉鎮市區代碼' ordinal='3' />
-                  <column datatype='string' name='鄉鎮市區名稱' ordinal='4' />
-                  <column datatype='string' name='行業名稱' ordinal='5' />
-                  <column datatype='integer' name='平均開立張數' ordinal='6' />
-                  <column datatype='integer' name='平均開立金額' ordinal='7' />
-                  <column datatype='integer' name='平均客單價' ordinal='8' />
-                  <column datatype='integer' name='COVID' ordinal='9' />
-                  <column datatype='integer' name='Year' ordinal='10' />
-                  <column datatype='integer' name='Month' ordinal='11' />
-                  <column datatype='integer' name='Day' ordinal='12' />
-                  <column datatype='integer' name='Anniversary' ordinal='13' />
-                  <column datatype='integer' name='週年慶前後' ordinal='14' />
-                </columns>
-              </relation>
-            </properties>
-          </object>
-        </objects>
-      </_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
-    </datasource>
     <datasource caption='Sheet1 (government_data_2.0)' inline='true' name='federated.1f8z6ua066vtge16w5zal0w2bvc9' version='18.1'>
       <connection class='federated'>
         <named-connections>
@@ -813,6 +447,372 @@
         </objects>
       </_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
     </datasource>
+    <datasource caption='Sheet1 (百貨公司所在區)' inline='true' name='federated.05en3l20aktxlv1gmauy01hsbzdv' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='百貨公司所在區' name='excel-direct.0gp56zz05d9o9316h2hf81xn0c50'>
+            <connection class='excel-direct' cleaning='no' compat='no' dataRefreshTime='' filename='D:/課程資料/Github/MasterCard/百貨公司所在區.xlsx' interpretationMode='0' password='' server='' validate='no' />
+          </named-connection>
+        </named-connections>
+        <_.fcp.ObjectModelEncapsulateLegacy.false...relation connection='excel-direct.0gp56zz05d9o9316h2hf81xn0c50' name='Sheet1' table='[Sheet1$]' type='table'>
+          <columns gridOrigin='A1:O5224:no:A1:O5224:0' header='yes' outcome='6'>
+            <column datatype='date' name='發票年月' ordinal='0' />
+            <column datatype='string' name='縣市代碼' ordinal='1' />
+            <column datatype='string' name='縣市名稱' ordinal='2' />
+            <column datatype='integer' name='鄉鎮市區代碼' ordinal='3' />
+            <column datatype='string' name='鄉鎮市區名稱' ordinal='4' />
+            <column datatype='string' name='行業名稱' ordinal='5' />
+            <column datatype='integer' name='平均開立張數' ordinal='6' />
+            <column datatype='integer' name='平均開立金額' ordinal='7' />
+            <column datatype='integer' name='平均客單價' ordinal='8' />
+            <column datatype='integer' name='COVID' ordinal='9' />
+            <column datatype='integer' name='Year' ordinal='10' />
+            <column datatype='integer' name='Month' ordinal='11' />
+            <column datatype='integer' name='Day' ordinal='12' />
+            <column datatype='integer' name='Anniversary' ordinal='13' />
+            <column datatype='integer' name='週年慶前後' ordinal='14' />
+          </columns>
+        </_.fcp.ObjectModelEncapsulateLegacy.false...relation>
+        <_.fcp.ObjectModelEncapsulateLegacy.true...relation connection='excel-direct.0gp56zz05d9o9316h2hf81xn0c50' name='Sheet1' table='[Sheet1$]' type='table'>
+          <columns gridOrigin='A1:O5224:no:A1:O5224:0' header='yes' outcome='6'>
+            <column datatype='date' name='發票年月' ordinal='0' />
+            <column datatype='string' name='縣市代碼' ordinal='1' />
+            <column datatype='string' name='縣市名稱' ordinal='2' />
+            <column datatype='integer' name='鄉鎮市區代碼' ordinal='3' />
+            <column datatype='string' name='鄉鎮市區名稱' ordinal='4' />
+            <column datatype='string' name='行業名稱' ordinal='5' />
+            <column datatype='integer' name='平均開立張數' ordinal='6' />
+            <column datatype='integer' name='平均開立金額' ordinal='7' />
+            <column datatype='integer' name='平均客單價' ordinal='8' />
+            <column datatype='integer' name='COVID' ordinal='9' />
+            <column datatype='integer' name='Year' ordinal='10' />
+            <column datatype='integer' name='Month' ordinal='11' />
+            <column datatype='integer' name='Day' ordinal='12' />
+            <column datatype='integer' name='Anniversary' ordinal='13' />
+            <column datatype='integer' name='週年慶前後' ordinal='14' />
+          </columns>
+        </_.fcp.ObjectModelEncapsulateLegacy.true...relation>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[Sheet1]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='context'>0</attribute>
+              <attribute datatype='string' name='gridOrigin'>&quot;A1:O5224:no:A1:O5224:0&quot;</attribute>
+              <attribute datatype='boolean' name='header'>true</attribute>
+              <attribute datatype='integer' name='outcome'>6</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>發票年月</remote-name>
+            <remote-type>7</remote-type>
+            <local-name>[發票年月]</local-name>
+            <parent-name>[Sheet1]</parent-name>
+            <remote-alias>發票年月</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>date</local-type>
+            <aggregation>Year</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;DATE&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Sheet1_E5396CE0205F45DBB27A548597281174]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>縣市代碼</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[縣市代碼]</local-name>
+            <parent-name>[Sheet1]</parent-name>
+            <remote-alias>縣市代碼</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LZH_RTW_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Sheet1_E5396CE0205F45DBB27A548597281174]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>縣市名稱</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[縣市名稱]</local-name>
+            <parent-name>[Sheet1]</parent-name>
+            <remote-alias>縣市名稱</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LZH_RTW_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Sheet1_E5396CE0205F45DBB27A548597281174]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>鄉鎮市區代碼</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[鄉鎮市區代碼]</local-name>
+            <parent-name>[Sheet1]</parent-name>
+            <remote-alias>鄉鎮市區代碼</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Sheet1_E5396CE0205F45DBB27A548597281174]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>鄉鎮市區名稱</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[鄉鎮市區名稱]</local-name>
+            <parent-name>[Sheet1]</parent-name>
+            <remote-alias>鄉鎮市區名稱</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LZH_RTW_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Sheet1_E5396CE0205F45DBB27A548597281174]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>行業名稱</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[行業名稱]</local-name>
+            <parent-name>[Sheet1]</parent-name>
+            <remote-alias>行業名稱</remote-alias>
+            <ordinal>5</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LZH_RTW_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Sheet1_E5396CE0205F45DBB27A548597281174]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>平均開立張數</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[平均開立張數]</local-name>
+            <parent-name>[Sheet1]</parent-name>
+            <remote-alias>平均開立張數</remote-alias>
+            <ordinal>6</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Sheet1_E5396CE0205F45DBB27A548597281174]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>平均開立金額</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[平均開立金額]</local-name>
+            <parent-name>[Sheet1]</parent-name>
+            <remote-alias>平均開立金額</remote-alias>
+            <ordinal>7</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Sheet1_E5396CE0205F45DBB27A548597281174]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>平均客單價</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[平均客單價]</local-name>
+            <parent-name>[Sheet1]</parent-name>
+            <remote-alias>平均客單價</remote-alias>
+            <ordinal>8</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Sheet1_E5396CE0205F45DBB27A548597281174]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>COVID</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[COVID]</local-name>
+            <parent-name>[Sheet1]</parent-name>
+            <remote-alias>COVID</remote-alias>
+            <ordinal>9</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Sheet1_E5396CE0205F45DBB27A548597281174]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Year</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Year]</local-name>
+            <parent-name>[Sheet1]</parent-name>
+            <remote-alias>Year</remote-alias>
+            <ordinal>10</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Sheet1_E5396CE0205F45DBB27A548597281174]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Month</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Month]</local-name>
+            <parent-name>[Sheet1]</parent-name>
+            <remote-alias>Month</remote-alias>
+            <ordinal>11</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Sheet1_E5396CE0205F45DBB27A548597281174]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Day</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Day]</local-name>
+            <parent-name>[Sheet1]</parent-name>
+            <remote-alias>Day</remote-alias>
+            <ordinal>12</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Sheet1_E5396CE0205F45DBB27A548597281174]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Anniversary</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Anniversary]</local-name>
+            <parent-name>[Sheet1]</parent-name>
+            <remote-alias>Anniversary</remote-alias>
+            <ordinal>13</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Sheet1_E5396CE0205F45DBB27A548597281174]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>週年慶前後</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[週年慶前後]</local-name>
+            <parent-name>[Sheet1]</parent-name>
+            <remote-alias>週年慶前後</remote-alias>
+            <ordinal>14</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Sheet1_E5396CE0205F45DBB27A548597281174]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column aggregation='Sum' datatype='integer' name='[Anniversary]' role='dimension' type='ordinal' />
+      <column caption='Covid' datatype='integer' name='[COVID]' role='dimension' type='ordinal' />
+      <column datatype='integer' name='[Day]' role='dimension' type='quantitative' />
+      <column datatype='integer' name='[Month]' role='dimension' type='quantitative' />
+      <column datatype='integer' name='[Year]' role='dimension' type='quantitative' />
+      <_.fcp.ObjectModelTableType.true...column caption='Sheet1' datatype='table' name='[__tableau_internal_object_id__].[Sheet1_E5396CE0205F45DBB27A548597281174]' role='measure' type='quantitative' />
+      <column datatype='string' name='[行業名稱]' role='dimension' type='nominal'>
+        <aliases>
+          <alias key='&quot;食品、飲料及菸草製品零售業&quot;' value='食品、飲料及菸草零售' />
+        </aliases>
+      </column>
+      <column-instance column='[行業名稱]' derivation='None' name='[none:行業名稱:nk]' pivot='key' type='nominal' />
+      <layout _.fcp.SchemaViewerObjectModel.false...dim-percentage='0.5' _.fcp.SchemaViewerObjectModel.false...measure-percentage='0.4' dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+      <style>
+        <style-rule element='mark'>
+          <encoding attr='color' field='[none:行業名稱:nk]' type='palette'>
+            <map to='#4e79a7'>
+              <bucket>&quot;百貨公司&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;超級市場&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;便利商店&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;綜合商品零售業&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;餐飲業&quot;</bucket>
+            </map>
+            <map to='#edc948'>
+              <bucket>&quot;零售式量販店&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;住宿服務業&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;食品、飲料及菸草製品零售業&quot;</bucket>
+            </map>
+          </encoding>
+        </style-rule>
+      </style>
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;Taiwan&quot;' />
+      </semantic-values>
+      <_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+        <objects>
+          <object caption='Sheet1' id='Sheet1_E5396CE0205F45DBB27A548597281174'>
+            <properties context=''>
+              <relation connection='excel-direct.0gp56zz05d9o9316h2hf81xn0c50' name='Sheet1' table='[Sheet1$]' type='table'>
+                <columns gridOrigin='A1:O5224:no:A1:O5224:0' header='yes' outcome='6'>
+                  <column datatype='date' name='發票年月' ordinal='0' />
+                  <column datatype='string' name='縣市代碼' ordinal='1' />
+                  <column datatype='string' name='縣市名稱' ordinal='2' />
+                  <column datatype='integer' name='鄉鎮市區代碼' ordinal='3' />
+                  <column datatype='string' name='鄉鎮市區名稱' ordinal='4' />
+                  <column datatype='string' name='行業名稱' ordinal='5' />
+                  <column datatype='integer' name='平均開立張數' ordinal='6' />
+                  <column datatype='integer' name='平均開立金額' ordinal='7' />
+                  <column datatype='integer' name='平均客單價' ordinal='8' />
+                  <column datatype='integer' name='COVID' ordinal='9' />
+                  <column datatype='integer' name='Year' ordinal='10' />
+                  <column datatype='integer' name='Month' ordinal='11' />
+                  <column datatype='integer' name='Day' ordinal='12' />
+                  <column datatype='integer' name='Anniversary' ordinal='13' />
+                  <column datatype='integer' name='週年慶前後' ordinal='14' />
+                </columns>
+              </relation>
+            </properties>
+          </object>
+        </objects>
+      </_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+    </datasource>
   </datasources>
   <actions>
     <action caption='醒目提示 1 (已產生)' name='[Action1_7095D309E4D84E1A88AA376BFA7487B5]'>
@@ -898,33 +898,40 @@
             <datasource caption='Sheet1 (government_data_2.0)' name='federated.1f8z6ua066vtge16w5zal0w2bvc9' />
           </datasources>
           <datasource-dependencies datasource='federated.1f8z6ua066vtge16w5zal0w2bvc9'>
-            <column-instance column='[平均開立金額]' derivation='Avg' name='[avg:平均開立金額:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[平均客單價]' derivation='Avg' name='[avg:平均客單價:qk]' pivot='key' type='quantitative' />
             <column-instance column='[發票年月]' derivation='Month' name='[mn:發票年月:ok]' pivot='key' type='ordinal' />
-            <column-instance column='[縣市名稱]' derivation='None' name='[none:縣市名稱:nk]' pivot='key' type='nominal' />
             <column-instance column='[行業名稱]' derivation='None' name='[none:行業名稱:nk]' pivot='key' type='nominal' />
-            <column datatype='integer' name='[平均開立金額]' role='measure' type='quantitative' />
+            <column-instance column='[發票年月]' derivation='Year' name='[yr:發票年月:ok]' pivot='key' type='ordinal' />
+            <column datatype='integer' name='[平均客單價]' role='measure' type='quantitative' />
             <column datatype='date' name='[發票年月]' role='dimension' type='ordinal' />
-            <column datatype='string' name='[縣市名稱]' role='dimension' type='nominal' />
             <column datatype='string' name='[行業名稱]' role='dimension' type='nominal' />
           </datasource-dependencies>
           <filter class='categorical' column='[federated.1f8z6ua066vtge16w5zal0w2bvc9].[none:行業名稱:nk]'>
-            <groupfilter function='member' level='[none:行業名稱:nk]' member='&quot;百貨公司&quot;' user:ui-domain='relevant' user:ui-enumeration='inclusive' user:ui-marker='enumerate' />
+            <groupfilter function='member' level='[none:行業名稱:nk]' member='&quot;零售式量販店&quot;' user:ui-domain='relevant' user:ui-enumeration='inclusive' user:ui-marker='enumerate' />
+          </filter>
+          <filter class='categorical' column='[federated.1f8z6ua066vtge16w5zal0w2bvc9].[yr:發票年月:ok]'>
+            <groupfilter function='union' user:ui-domain='relevant' user:ui-enumeration='inclusive' user:ui-marker='enumerate'>
+              <groupfilter function='member' level='[yr:發票年月:ok]' member='2018' />
+              <groupfilter function='member' level='[yr:發票年月:ok]' member='2019' />
+              <groupfilter function='member' level='[yr:發票年月:ok]' member='2020' />
+            </groupfilter>
           </filter>
           <slices>
             <column>[federated.1f8z6ua066vtge16w5zal0w2bvc9].[none:行業名稱:nk]</column>
+            <column>[federated.1f8z6ua066vtge16w5zal0w2bvc9].[yr:發票年月:ok]</column>
           </slices>
           <aggregation value='true' />
         </view>
         <style />
         <panes>
-          <pane selection-relaxation-option='selection-relaxation-allow'>
+          <pane id='2' selection-relaxation-option='selection-relaxation-allow'>
             <view>
               <breakdown value='auto' />
             </view>
             <mark class='Automatic' />
           </pane>
         </panes>
-        <rows>([federated.1f8z6ua066vtge16w5zal0w2bvc9].[none:縣市名稱:nk] * [federated.1f8z6ua066vtge16w5zal0w2bvc9].[avg:平均開立金額:qk])</rows>
+        <rows>[federated.1f8z6ua066vtge16w5zal0w2bvc9].[avg:平均客單價:qk]</rows>
         <cols>[federated.1f8z6ua066vtge16w5zal0w2bvc9].[mn:發票年月:ok]</cols>
       </table>
       <simple-id uuid='{D30A9622-F538-4699-A1AE-DE81ED1159BA}' />
@@ -1850,8 +1857,8 @@
         <devicelayout auto-generated='true' name='Phone'>
           <size maxheight='700' minheight='700' sizing-mode='vscroll' />
           <zones>
-            <zone h='100000' id='10' type-v2='layout-basic' w='100000' x='0' y='0'>
-              <zone h='98222' id='9' param='vert' type-v2='layout-flow' w='99000' x='500' y='889'>
+            <zone h='100000' id='12' type-v2='layout-basic' w='100000' x='0' y='0'>
+              <zone h='84000' id='11' param='vert' type-v2='layout-flow' w='84000' x='8000' y='8000'>
                 <zone fixed-size='280' h='98222' id='3' is-fixed='true' name='工作表 13' w='99000' x='500' y='889'>
                   <zone-style>
                     <format attr='border-color' value='#000000' />
@@ -1913,8 +1920,8 @@
         <devicelayout auto-generated='true' name='Phone'>
           <size maxheight='700' minheight='700' sizing-mode='vscroll' />
           <zones>
-            <zone h='100000' id='42' type-v2='layout-basic' w='100000' x='0' y='0'>
-              <zone h='84000' id='41' param='vert' type-v2='layout-flow' w='84000' x='8000' y='8000'>
+            <zone h='100000' id='44' type-v2='layout-basic' w='100000' x='0' y='0'>
+              <zone h='84000' id='43' param='vert' type-v2='layout-flow' w='84000' x='8000' y='8000'>
                 <zone fixed-size='280' h='98000' id='3' is-fixed='true' name='百貨業整體市場成長狀況與週年慶重要性' w='82400' x='800' y='1000'>
                   <zone-style>
                     <format attr='border-color' value='#000000' />
@@ -2005,8 +2012,8 @@
         <devicelayout auto-generated='true' name='Phone'>
           <size maxheight='750' minheight='750' sizing-mode='vscroll' />
           <zones>
-            <zone h='100000' id='30' type-v2='layout-basic' w='100000' x='0' y='0'>
-              <zone h='84000' id='29' param='vert' type-v2='layout-flow' w='84000' x='8000' y='8000'>
+            <zone h='100000' id='32' type-v2='layout-basic' w='100000' x='0' y='0'>
+              <zone h='98000' id='31' param='vert' type-v2='layout-flow' w='98400' x='800' y='1000'>
                 <zone fixed-size='280' h='49000' id='3' is-fixed='true' name='百貨鄰近地區平均客單價變化' w='77800' x='800' y='1000'>
                   <zone-style>
                     <format attr='border-color' value='#000000' />
@@ -2113,8 +2120,8 @@
         <devicelayout auto-generated='true' name='Phone'>
           <size maxheight='750' minheight='750' sizing-mode='vscroll' />
           <zones>
-            <zone h='100000' id='34' type-v2='layout-basic' w='100000' x='0' y='0'>
-              <zone h='98000' id='33' param='vert' type-v2='layout-flow' w='98400' x='800' y='1000'>
+            <zone h='100000' id='36' type-v2='layout-basic' w='100000' x='0' y='0'>
+              <zone h='84000' id='35' param='vert' type-v2='layout-flow' w='84000' x='8000' y='8000'>
                 <zone fixed-size='280' h='49000' id='8' is-fixed='true' name='百貨鄰近地區平均開立張數變化' w='77400' x='800' y='1000'>
                   <zone-style>
                     <format attr='border-color' value='#000000' />
@@ -2201,8 +2208,8 @@
         <devicelayout auto-generated='true' name='Phone'>
           <size maxheight='700' minheight='700' sizing-mode='vscroll' />
           <zones>
-            <zone h='100000' id='45' type-v2='layout-basic' w='100000' x='0' y='0'>
-              <zone h='84000' id='44' param='vert' type-v2='layout-flow' w='84000' x='8000' y='8000'>
+            <zone h='100000' id='47' type-v2='layout-basic' w='100000' x='0' y='0'>
+              <zone h='84000' id='46' param='vert' type-v2='layout-flow' w='84000' x='8000' y='8000'>
                 <zone fixed-size='280' h='98000' id='3' is-fixed='true' name='週年慶前後與其他時期發票開立張數比較' w='49200' x='800' y='1000'>
                   <zone-style>
                     <format attr='border-color' value='#000000' />
@@ -2263,8 +2270,8 @@
         <devicelayout auto-generated='true' name='Phone'>
           <size maxheight='700' minheight='700' sizing-mode='vscroll' />
           <zones>
-            <zone h='100000' id='35' type-v2='layout-basic' w='100000' x='0' y='0'>
-              <zone h='84000' id='34' param='vert' type-v2='layout-flow' w='84000' x='8000' y='8000'>
+            <zone h='100000' id='37' type-v2='layout-basic' w='100000' x='0' y='0'>
+              <zone h='84000' id='36' param='vert' type-v2='layout-flow' w='84000' x='8000' y='8000'>
                 <zone fixed-size='280' h='98000' id='3' is-fixed='true' name='週年慶前後與其他時期客單價比較' w='98400' x='800' y='1000'>
                   <zone-style>
                     <format attr='border-color' value='#000000' />
@@ -2316,8 +2323,8 @@
         <devicelayout auto-generated='true' name='Phone'>
           <size maxheight='700' minheight='700' sizing-mode='vscroll' />
           <zones>
-            <zone h='100000' id='35' type-v2='layout-basic' w='100000' x='0' y='0'>
-              <zone h='84000' id='34' param='vert' type-v2='layout-flow' w='84000' x='8000' y='8000'>
+            <zone h='100000' id='37' type-v2='layout-basic' w='100000' x='0' y='0'>
+              <zone h='84000' id='36' param='vert' type-v2='layout-flow' w='84000' x='8000' y='8000'>
                 <zone fixed-size='280' h='98000' id='3' is-fixed='true' name='週年慶前後與其他時期發票開立張數比較' w='98400' x='800' y='1000'>
                   <zone-style>
                     <format attr='border-color' value='#000000' />
@@ -2877,7 +2884,7 @@
       <active id='-1' />
       <simple-id uuid='{A5ED5B47-1AA9-4274-B542-0CF0613500BF}' />
     </window>
-    <window class='worksheet' maximized='true' name='工作表 12'>
+    <window class='worksheet' name='工作表 12'>
       <cards>
         <edge name='left'>
           <strip size='160'>
@@ -2893,7 +2900,7 @@
           <strip size='2147483647'>
             <card type='rows' />
           </strip>
-          <strip size='30'>
+          <strip size='29'>
             <card type='title' />
           </strip>
         </edge>
@@ -2917,7 +2924,7 @@
       </viewpoint>
       <simple-id uuid='{0E7BEDAB-ED7E-4C90-A1B8-1B02D26C6763}' />
     </window>
-    <window class='worksheet' name='工作表 13'>
+    <window class='worksheet' maximized='true' name='工作表 13'>
       <cards>
         <edge name='left'>
           <strip size='160'>
@@ -2933,7 +2940,7 @@
           <strip size='2147483647'>
             <card type='rows' />
           </strip>
-          <strip size='30'>
+          <strip size='29'>
             <card type='title' />
           </strip>
         </edge>
@@ -3305,210 +3312,127 @@
     </thumbnail>
     <thumbnail height='192' name='工作表 13' width='192'>
       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
-      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
+      AAAZUElEQVR4nO3daXAk533f8W93z30DM4P73MVisTfFQ6IikxQpOqIUJZYUi6ZjRYpUTrkS
+      vUhFSaWSSqlK5RwV23I5ZTt2yq74kKKDJZGSIseWTEXmIYrSckntLvdeLIDFOcAAg7nv7icv
+      sLsiqSF3doABMJj/pwpcFIjufjD9/Obp6eff3ZpSSiFEm9J3ugFC7CQJgGhrtp1ugNiccj7N
+      pal5wkEfvo4omlkkmyts/L+KSYfHRrpqw++2UzUVPqfO/EoClypgi47RE3Ds8F+wsyQArUwp
+      kvEFllN5SmuLpIw4I1E3CysJDA08/hBmyYbH6WQhVaavfwizkEFzOukgT6wqu19egRaXqxj0
+      eE2yBS8hb4CA30XF0rAsi1yhguF3UDUVht2DWc5TURUKqRzrpFHunW79zpPPAK1M0+jqipAt
+      aficBt3dUWwOB51eA80TIhwJMzA4SsDrxGa3EQoGKZSrjB0Yw2l3YMjeR2vWadCbq9U0rRmr
+      Fzcoy8K0FIaho5TaeL2VRdUCm6EDGsoyMRXYbQbKUmgamJaFruttv3+aEgDLsrAs62c7RIhd
+      qrHPAFaFy5cnWVlLMdQfIVso098/wPXpazi8ISYOjGJoGkopdF3GWbF7NdY7dTsHDozQ1dOD
+      w25DmRUSa3G6+vfjUFVkalm0iobPAi3OzdM3MEolmyAStlhbr1IoxbBMEznoEa2i4c8ApVIJ
+      p9NJtVJiPZUlHO4kl05ic/lwO+0opeQQSOx6TT0LJAEQu530TtHWdjQAUoktdtqOBWBxNcM3
+      nr0gIRA7ascC0NPp49WrMebj6Z1qghANBsCqcPniRc5fuEKpmOPK1WtUTYuF61OsJjP1bVjX
+      eOKRI3z1++ewZBQQO6Txs0BKcenyFXRlMjjYxbXpFTyhMKVMgolDE8BGScTbnQVSwO989Uc8
+      9s79HN/f3VAzhNiMhifC0oklfJ095JPLuNwuzHIZp8OJZTOwlELdqAW6Xb6eeOQwf/StUxwa
+      CqPrMoUmtlfDAShUNPq6A+SMImfPT7P/8AQL05M4A5GNd/06a4GGukMcHIrw/Nk5Hr13X6PN
+      EaIhu2IiLJ0r8fk/f5b/9OsP43W19yV6YnvtiomwgNfJw3eP8u0fXt7ppog2sysCAPD++/Zz
+      ZnKZWCK7000RbWTXBMBhN/jogxM8+YPzMjkmts2uCQDAvRN9pHJFrs4ndropok3sqgAYus7H
+      f/E4//tvz2JZMgqI5ttVAQAY7Q3R3enlxxfmd7opog3sugBomsYTjxzl6ecvUixXd7o5Yo9r
+      eB5gZXGWdFkn4rOxsJJgcHiU1cXruAJR+rrDm74g5ut/dx6bTecjDxxqaHkh6tHgTHCZK1dm
+      6BkeZSUeR9cdVAspbL4o2fVVrK7OW6UQjfrA/WN8/s+f48Hjw3T4XQ2vR4i30+AhkMIXimAv
+      Z+gePcTYcITpqaUtbZjHaecfvPsAX3/2wpauV4jXa3AEcNLV6SZnGliZOFdWEkwcP8Ly3BS+
+      jii6pqF0fdPXBD9wfJjvn5pmPp5hqDvY8HpEcyQzRV6+vEB/JEA05KEz4MZosWvAd0Ut0Nu5
+      cD3ON5+7yH/4+ANSLbqLlKsm//VLLzDUHaRUMVlN5ljPFHHYDbwuB10dHro7fHR3eunq8NLh
+      c+P3OLDbjJ1u+hvs+gAopfjdJ1/ikbtHuXu8d4taJzZDKcWXn3kNQ9d44n1Hb93+0rIUhXKV
+      XKFMPJljeT3HciLL8nqOZLZIJl/G5bAR8rmIhjx0d3o5OBhhX1/Hjv0tuz4AsHH98B88fZLf
+      /PR7d907SDv6ycUFnnn5Gv/+137hxg1466OUIlsok8wWiSfzxBJZnjk1xb/+2P07dojbEgEA
+      +OJ3z9DV4eWxd41tyfpEY5bWMnzhay/xuU88SGgLzs7NxJL8j6df5vOfegive/tL4VvmE8uH
+      H5jg+6emyBbKO92UtlUsV/nDp0/y6x96x5Z0foDh7iDvf9d+/vSvXsW0rC1Z551omQAEvE7e
+      d+8+vvn8RakW3QGWUvzld8/wrsMDTAxFtmy9mqbxyN2j2G0G3zt5je3etS0TAIBH7xnltekV
+      ltdzO92UtvPsT2fIFkp86O+Nb/kzH3RN49MfvIsXzs5ydX5tS9d9221v69Y2yW4z+JWHj/Dl
+      Z16TUWAbTS+t872T1/iNf3gvepMeeOJ22vnMR+7jT77zCulcqSnbqKXhACxcv8bV6Tkya8uc
+      Ofsa2UKRyxfOMTMfa+rzAe4e76VYrnLx+moTtyJuyhcr/PG3TvEb/+gefJ7mfkjtj/j58AMT
+      /M9vn6Jqbs/ngQbPApV47v/9mK7BQQyqHNjfx9nTk0QGRiikVhgdG7tVC9SMRyRNLyX54vfO
+      8rlPPtC0dySxcdz/h0+f4ti+KA+/Y2Tbtvtnf32acNDDL71nvOnbarAUQicUieKlyFoZioUi
+      hsNBqVyiUjU3OqVh3PbGWI0aGwgz0BXgR+cWeOiu4S1fv9jwNy9dxe208ei9+7d1u5/8wF38
+      ly+9wIGBMMf2dTV1Ww32TjsDPSGUt5OjY8PMLaWYODyB08oR7Ru49a6vaVrTvj728BH+z4uX
+      mVpcb+p22vXr0vVVfnJhnn/2gbu2fdtOu43PfPg+/vK7p0lmi83dXqtMhNWyEE/zu0++xL/8
+      8H2MDXQ2bTvtJpUr8pt/8Tyfffx++qOBHWvHK5cX+auXrvIf/+kDdzTjfCda6izQm/VHA/yb
+      J97NH3/7FJfntvf02V5VNS3+4KmTPP7w4R3t/AD3HOzjwEAnT/7gXNPO+rV0AAD6IwE++/j9
+      /Ol3XuHy7Oq2T6TsJUopnnruIkPdQd55qH+nmwPAx957mOmlJKcuLTZl/S0fANgYCT77+Lv5
+      k++8ypU5CUGjfno1xqXZVX71dRWeO81uM/gXv3QvX/u786w0YQJ0TwQAoC/i598+sRGCS7Px
+      nW5Oy4knc3z5mdf4zEfu23UVt+Ggh089dhe//9RPKFfMLV33ngkAQG94IwR/9n9/yoWZuMwW
+      16lcNfn9p07yycdOEAl6dro5NR0ZjXL3eC9f+tuzW7pfW/os0FuJrWX5wpM/4tMffAeHhiNN
+      Gc5N0+LMtWVshk405CHgdeKwGdgMfUu3p5TCtBTFcpV4Msfiambjay3LciKLpRS9YT/9ET8D
+      0QADXQE6A26cdqOuyxOVUvzF35wm4HXy0QcP7ZpDn1pMy+ILX3uJ9xwd5BeOD23JOvdkAACW
+      13P89lde5NMfvIsjo1s3maKU4tWrMZ569gJdHV58bgerqTypXIlq1UTTNMJBN9Ggl0jIQzTk
+      ufV9wOt825nrqmmxnMiytJZlYS3DYjzN4lqWfKmC024QDXroi/jpiwToC/sIBz1omnYrGPPx
+      NPMraRKZApWqRSToZqy/k/5ogIFogN6w7+cOb158bZbnz8zy7/7JezBa4JLTVLbIf/7i8/yr
+      j93PwBacpWo4AOfPvIrdHyFgt1jL5BkYHGJ+5hoOXydjo4OwCx6UvbKe43e++iM+8dhxju3b
+      3COYLKU4e22Zp567SDjg5vGHj9Ab9qFp2huG5HLVZC1VIJ7MEU/liSfzrCbzrKbyZPIlHHYD
+      l8NGOOAmEvRSKFVYXMuQKZSpVi26Qh56I376Ihvv6n1hP36vkxtTi9zuDfpmW0xLEU/mmFxI
+      MB9PsxDPEEtkMXSdoNdJfzRAp9/F82dn+dwnHiTgdW7q9dlOV+fW+F9//VM+/6n34nI0/IwX
+      YBMBOPvqSQxPBwGXRiqTJxgMYrhC5JMrjI7tb2ot0J1YWc/xe1//CR//+8c4MhK94+Utpbg0
+      u8a3XriM22nw0QcPMdQdpJG/yrIUpapJsVQlkc4TT+VxO2z0hv34PU5cDqOpr5dSG4dSqVyJ
+      hfjGiHF8fzejvaGmbbNZvnvyGteXU/zzD71jU/VgDQagSmItx9LsNF0jw3iMEpNTa7gDASr5
+      DIePHt4VI8BN8WSO3/rKi3zi/Sc4tq+rrk6mlOLqfIInf3Aeh93glx86xL6+jh0PtNiglOK/
+      f/3HTAxHefeRgVs/UwAK1MZ/UPxsVFQ/9/NNjADx2Dw4AgTdOnOxBCPDg6yvLOIIRAh4nDv+
+      GeDNVlN5fusrL/Jrv3iMu8Z63vL3lILJhTW+8ewFLEvxK48cZX+/dPzdKFcs80ffPLVxmawG
+      Gtw4RNR+9r1243te9/3rf75XPwTXEk/m+cLXXuSJ9x3lrrGeN3RqpRQzsSTfePYCxYrJLz90
+      iINDESm33uPaKgCwMRL89lde5FcfPXprJJiPp/nGsxdI5Up89MFDHB3tkptwtYm2CwBAIl3g
+      v335hzx67z4uza6ysp7jHz90iBNjPfKO32baMgCwEYIvfu8M7zk2xD3jvfKO36baNgBCwB6r
+      BRLiTkkARFuTAIi21nAhxelXTuLp6CHoMImtrtMzOEpsbgaHJ8TE+OhWtlGIpmk4AA6HnUI2
+      i3LZOXHiEKdfPk/36Dj59WUsy7pVC2TtwA1PhahXgwGoEghGWV2Jo7k0rs/M4YtEWV1ZhJtn
+      fm5UScpZILGbNXwaNJdJgeHE47KTTGcJBQPksxlsTg9Oh01Og4qWIPMAoq1J7xRtTQIg2poE
+      QLQ1CYBoaxIA0dYkAKKtSQBEW2u4FCIZX+TM1SWGIh7yVUVfby/TU1PY3H6OHW7+o22E2Ao1
+      A3Bzbuyt7oSgrDLXFxMEPDa8fj+5eJzl5RV6h8bJr8ekFki0jJoBmJm6wtLiPPmSDZ/fw4m7
+      78Zt/9kt9ZSlCIX8TM/M0h3pQNPBZnexOHsFm9MntUCiZdQMQDmXYS2fwaX3Yui2N3R+AN3m
+      ZHh4mKGhjRuU9tx4LphSgxvPXYKmPipViK1SMwAOj49oqIuALwSUyZVMvM6fv2f8zUOkN/8r
+      RKuoeXzSGY7iANK5NKWKQpP3c7FH1RwBsukUnmAYvwHobjzOzd2BV4jdqmbPzmWSJIsaZiGL
+      v7OTStXCbpMPs2LvqdmrDZsDt9OOaZobpzTlEEjsUTVHAK/Ph1Ws4h0awetx49hlD00TYqvU
+      DEBH0AteH3p+lUAkunEfdTnBI/agmodAlqVYnJ3k4uQkr/7wBdLVGr+kFOVyGaUs8vkCSilK
+      xSKV6tY+xlKIZqo5AuSzGXKlMjZDxypVNjr1mybDVmOznJ9ZZSTqpVStYnOHyKTW0XQ7x45O
+      bEvjhdismgHwd0QYM/yAojMcwfGmM0CqWuDStUU0ZZGr+Dk8Mcbpl8/RPXpQaoFES6l5Vwir
+      UuLVM2cIhjrRNZ3BkVEcxuuepmKZZHN5pqdnCAc8rCZTdPUNE5u/jt0T5MjE/l31jDAh3krN
+      AKQTCRKxZVQ4SNDhwRcIviEA9ZDboohWULN3Opw2UoUyXpsNn//OO78QraJmANYTCbLFLCsL
+      c8zH1ra7TUJsm5qHQMuxRZxuH/lclp6enoYOY+QQSLSC2qdBM0kunDtH0dJJJFOMHRjHZZfZ
+      YLH31BwBFhbmceiK5XSZg/uGsNlsd1zrLyOAaAU1RwCfz4fT6UZ3ZLHb7dvdJiG2zW3vDq1u
+      FALd6XkgGQFEK6j9GWB9kdlEBaeuSMfXGH/nPbjf8BuKmcnLVHQPXUEn88trDA7vY23pOq5A
+      F71dHdvSeCE2q2YA0sk4y6s5/PYejGqZWsUMka4erl2bZbEEuuHCKqbQPWHSiRW6oyGQMgjR
+      AmoGwOUN0hX2o5tQMR3Uqoe2LAtdsxgeO4a9muTMa7N0Dw7f+rWbR1ZNev6GEFuiZgA0uw8z
+      v4ArFCEQ7MduKrC9PgAWy0sx7N4g+fVlYivrTBw7zPLcFN5gFF3TULounwHErvfWxXCnzxAI
+      dWBoOgOj+3BKLZDYg2qOAJlUhk63Fy3gI+T0oEspkNijar49uzwusuUqXpuB1xfALgkQe1TN
+      ACTWVskVc8QX5plfWt3uNgmxbWp+BogtLWB3eikWcvT29koxnNizavZO0wKrnCdfrtzqyELs
+      RTU/BJfyKRbX1omt5yhkc4xPTEg1qNiTah4CxeMr2AyDfLFMf19vQyuWQyDRCt62GM6yrLfo
+      wIprly9SVA6GugJMza8wNn6AhelJnIEIQ/3dclG8aAlve9vnt+68Gh2dHVyfX2N+1eL44RHO
+      nrlIeGCEQmoFS3WBZWHd+BJit2rwvucWLk8Qu1qkUjEolUrodgeVcolq1UQHlKah67qMAGJX
+      a/jG/ytL83gjPfRHg0zPxZg4cpDluRl8vf1vuHpMnhojdrPbXhDTKPkQLFqB9E7R1iQAoq1J
+      AERbkwCItiYBEG1NAiDamgRAtLWGJ8KuXblArqwRDblJpPMMDA6xMDOFw9/J/pGBrWyjEE3T
+      cACGhke4dGWGUqWCMqtkkglC3cPkkyvyiCTRMhquBbp69RoHDx2hkE3TEy1z6eoK3pBBuVLZ
+      mP3VNJkJFrteg73Twm7YmJ6awek0mF3OcezEEYJOi4GRfXd8H1EhdorUAom2Jr1TtDUJgGhr
+      EgDR1iQAoq1JAERbkwCItiYBEG2t8Vqgy+dJ5S16u/ysxNfpHRplaXYahzfExIHRrWyjEE3T
+      cAD6+wcozMbI5CqcODHB6ZfP0z06Tn59WWqBRMtoMAAmr527yOj4BKnVJeZnF/CGIyRWY1im
+      KbVAomU0WAphEV+OozQbkUiQ9fUMnZ0hsukkNpcPt9MupRCiJUgtkGhr0jtFW5MAiLYmARBt
+      TQIg2poEQLQ1CYBoaxIA0dYarwU6dxIztB9HIU6uYtHX18v01BR2d4Cjhw5sZRuFaJqGJ8Iq
+      mRVmUjodtiKxlTh2p5dAZy/59RgjY/tv1QLJE2LEbtbwfYHmZmdZzNrwD0ax2XV0w8HS/CSG
+      3S21QKJlNDgCKCqVCgoNm2FgmiY2mw3LNNF0A13XpBRCtASpBRJtTXqnaGsSANHWJACirUkA
+      RFuTAIi2JgEQba3hACjLxLQslLIolUoopaiUy5im3AVCtI6Ga4GmL7xCObAPd3mVQrmM0xcm
+      mVhFtzk5fnRiK9soRNM0HIDB4RFmUlC2DCYOjXP65XP0jB4kvx6T+wKJltFwLdD01DSLeRv7
+      ekKcOXOBruERYnNXsbsDUgskWoaUQoi2Jr1TtDUJgGhrEgDR1iQAoq1JAERbkwCItiYBEG1t
+      0wGoFPMsLCxQKFVIr6+RL1W2ol1CbItNB2B6egoLDbOUYX55nWtXJ2nKzJoQTdBwLdBNAwOD
+      xONLTK6s0T0wLM8IEy1l0wHIZTOkswW6+gaJL07h8IakFki0DKkFEm1NeqdoaxIA0dYkAKKt
+      SQBEW9vSAMSX5knnilu5SiGaassCUMomSBZhbmZKJsJEy9j0PMBN1UoFr9ePVimgAHkshmgF
+      WzYCeAIdrC9fB4dbOr9oGTIRJtralh0CvZ5lWRv1QDdCsJn1bCZArb78zddup56zthXb3+nX
+      8HbLNyUAuq7fetE28+JpmrapP77Vl98LAdjp1/B2yzftEOitxBdnMF1hejr9zM/O4HC5MS2d
+      3p5oXcsvL1xnNVXkwPgBEiuL6DYHpbLJ4EBvXcsnVpZYWlljaP9Bipk1FDqFQonBoUH0Ovdz
+      bG4KR7APu5UlU7SoFnJ0D4/irGc/WUXOnr1CuKePvg4H0/E8bq2KOxAm5HfffnmlWJidpqy7
+      GemLMLcYw+W0o3DS3dVx28UrxSyTU7OYmp0jY/1cjyXxODQ0m5doOFDHH6CYnrxMRXNzYP8w
+      C7f2oUFvT6Su5ZfmZkgVLMYP7Gd5aR7D5qBUMRnsv/0+TCdiJAsG/REPF69MMbDvALZSlnTV
+      wirm6ewZwuN46x1RzKWZW04yNjrA5PlL2z8R5rDppHN5AMpVC7/fR7VSrXv5cHc/PrsiX6pQ
+      LFfw+/1YZv3LB0IdeN0GyVSeQqGE3+8HZdV92qpcSLOaSJDOliiVirjcXnSlodX5Slay66TL
+      FnaHHc0qYuHG5XJgmmZdy1fLWaZnYyhlASZVU8Pv91Au13chkt3lY/zAKA6HHVQFU9nw+lxU
+      6lweTNLpIvl0CgsoV038fi/VSp3LK5P1bIWArcpatkjp5j6s1rcPDYeDXCrL9dkFxg8fYnlh
+      jkouj8Pvx2koqurtd4SFQaWQQ1lVKFW3PwBer/dWXysX82QyGap131FasTQ3jbOzl6DXSbVc
+      IpPJUK7zxQNQClwuF6ViAdOskMlkKJbKdS8fW1ikVCqysrqGqlbJ5XPkCoW6l9c9Ee6/5xix
+      uTnMUplitUg2m6P+cVgRCnej8inKVYtiqUAmk8Wy6h/IF+fm6BsYRFWqFCsb2697cbOMMpw4
+      dEXFgnJxY/vVeq/70AwiQRezS3EMTaNyh/vQ69voP5oGlmkBGmVlUc5k6toPHq8XXdPQDQce
+      t2O7A2BxfW6JXHKVbCZFV/8+gj431h0chZXLFRLLS+QLOQKd3YQ7gjdeiPqkkmskUkW6u0K4
+      vQEikfDGCFCnobEJTpy4i4P7+rEMJ/09EXSt/nkPq1pm8spluvoHSBQNJoa7cNg2rp+oh83h
+      J+TVMLwdVIpFBgeH8LkcqLqP0xWeYBif0yBdtNg31IfbroNu1Le44SbkM7D7O6C4sQ8DPjf1
+      X/ekYVkWXQOjBJ2KYGc3nXewD+dmZimU0kR6epm6OrkRZIeLvmgEHe22h7HxpTkKxQLxeJzV
+      YoH/D33n2+2oN16RAAAAAElFTkSuQmCC
     </thumbnail>
     <thumbnail height='192' name='百貨業整體市場成長狀況與週年慶重要性' width='192'>
       iVBORw0KGgoAAAANSUhEUgAAAMAAAADACAYAAABS3GwHAAAACXBIWXMAABJ0AAASdAHeZh94
